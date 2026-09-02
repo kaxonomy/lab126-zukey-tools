@@ -1,0 +1,5 @@
+fido2==2.2.1
+hidapi==0.15.0
+imgui-bundle==1.92.900
+pyinstaller==6.22.2
+

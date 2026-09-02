@@ -1,0 +1,14 @@
+title = "ZukeyLab gitleaks configuration"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "zukey-modhex-otp"
+description = "Probable 44-character Modhex OTP"
+regex = '''(?i)\b[cbdefghijklnrtuv]{44}\b'''
+keywords = ["c", "b", "d", "e", "f", "g", "h", "i", "j", "k", "l", "n", "r", "t", "u", "v"]
+
+[[rules.allowlists]]
+description = "Clearly marked synthetic fixtures only"
+paths = ['''^tests/fixtures/''']
